@@ -2,6 +2,7 @@ def capitalize_and_ascii_sum(word: str):
     """
     This method capitalizes the word and finds out the sum of ASCII value of
     all characters of a word
+    
     """
     return sum(ord(x) for x in word.capitalize())
 
