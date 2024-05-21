@@ -7,6 +7,10 @@ def capitalize_and_ascii_sum(word: str):
 
 
 animals = ['cat', 'dog', 'cow']
+#using map
+animal_output = list(map(capitalize_and_ascii_sum, animals))
+print(animal_output)
+
 ## normal way
 # animal_output = []
 
@@ -16,6 +20,11 @@ animals = ['cat', 'dog', 'cow']
 
 # print(animal_output)
 
-#using map
-animal_output = list(map(capitalize_and_ascii_sum, animals))
-print(animal_output)
+def square(x):
+    return x**2
+# lambda x: x ** 2
+
+numbers = [1, 2, 3, 4, 5]
+
+squares = map(lambda x: x ** 2, numbers)
+print(list(squares))  # [1, 4, 9, 16, 25]
